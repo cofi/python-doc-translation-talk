@@ -1,0 +1,108 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage[]{inconsolata}
+\usetheme{Luebeck}
+% slim structure
+\useoutertheme[subsection=false]{miniframes}
+
+% pagenumbers
+\newcommand*\oldshorttitle{}
+\let\oldshorttitle\insertshorttitle
+\renewcommand*\insertshorttitle{
+  \oldshorttitle\hfill
+  \insertframenumber\,/\,\inserttotalframenumber
+}
+
+% colors
+\definecolor{darkGrey}{rgb}{0.1,0.1,0.1}
+\definecolor{maroon}{RGB}{75,0,0}
+
+\setbeamercolor{structure}{bg=white, fg=darkGrey}
+\setbeamercolor{frametitle}{fg=white,bg=maroon}
+\setbeamercolor{title in head/foot}{fg=white,bg=maroon}
+% disable navigation
+\beamertemplatenavigationsymbolsempty
+% bold fonts
+\usefonttheme{structurebold}
+% helvetica
+\usepackage[scaled]{helvet}
+
+\title[Übersetzungen der Python-Dokumentation]{Übersetzungen der Python-Dokumentation\\
+PyCon DE 2012}
+\author[markert.michael@googlemail.com]{Michael Markert \\
+  markert.michael@googlemail.com\\
+  github.com/cofi\\
+  bitbucket.org/cofi}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}{Python-Tutorial}
+  \begin{itemize}
+  \item entstand im Python-Forum (2009)
+  \item für 3.1, 3.2, 3.3, ...
+  \item Maintenance-Mode
+  \item \url{http://tutorial.pocoo.org}
+  \item \url{http://bitbucket.org/cofi/py-tutorial-de}
+  \end{itemize}
+\end{frame}
+\begin{frame}{}
+  \begin{center}
+    \only<1>{
+      \huge{\url{http://blog.python.org}}
+    }
+    \onslide<2>{
+      \textcolor{gray}{\huge{\url{http://blog.python.org}}}
+      \huge{\url{http://blog-de.python.org}}
+    }
+  \end{center}
+\end{frame}
+\begin{frame}{Python Insider}
+  \begin{itemize}
+  \item \url{http://blog-de.python.org}
+  \item $\sim$ 10 Pageviews / Tag
+  \item private repositories
+  \item Hilfe dringend gesucht
+    \begin{itemize}
+    \item 7 Posts unveröffentlicht, davon 5 komplett unübersetzt
+    \item Übersetzer, Korrekturleser
+    \end{itemize}
+  \item Blog der PSF möchte auch übersetzt werden (\url{http://pyfound.blogspot.com})
+  \end{itemize}
+\end{frame}
+\begin{frame}{Zukunftsmusik}
+  \begin{center}
+    \includegraphics[width=10cm]{translate-meme}
+  \end{center}
+\end{frame}
+\begin{frame}{Zukunftsmusik}
+  \begin{itemize}
+  \item Übersetzung der restlichen Python Dokumentation
+    \begin{itemize}
+    \item Howtos
+    \item Library Reference
+    \item Language Reference
+    \item FAQs
+    \item What's new
+    \item ...
+    \end{itemize}
+  \item (Wo)Manpower, (Wo)Manpower, (Wo)Manpower, ...
+  \end{itemize}
+\end{frame}
+\begin{frame}{}
+  \begin{center}
+    \Huge{I need YOU!}
+    \\
+    \vspace{2cm}
+    \huge{markert.michael@googlemail.com}
+  \end{center}
+\end{frame}
+
+\end{document}
